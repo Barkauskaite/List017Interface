@@ -2,6 +2,10 @@
 public class Computer implements ComputerOperations {
 	private String className ="";
 	
+	public Computer() {
+		this.className= "Computer";
+	}
+	
 	public void setClassName (String className) {
 		this.className= className;
 	}
@@ -19,11 +23,11 @@ public class Computer implements ComputerOperations {
 	}
 	
 	public void performDownload() {
-		System.out.println(getClassName()+" is now Downloading.");
+		System.out.println(getClassName()+" is now downloading a file.");
 	}
 
 	public void performUpload() {
-		System.out.println(getClassName()+" is now uploading.");
+		System.out.println(getClassName()+" is now uploading a file.");
 	}
 	public void playVideo() {
 		System.out.println(getClassName()+" is now playing video!");
